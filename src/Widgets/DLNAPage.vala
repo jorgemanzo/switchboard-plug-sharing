@@ -27,8 +27,8 @@ public class Sharing.Widgets.DLNAPage : SettingsPage {
         base ("dlna",
               _("Media Library"),
               "applications-multimedia",
-              _("While enabled, the following media libraries are shared to compatible devices in your network."),
-              _("While disabled, the selected media libraries are unshared, and it won't stream files from your computer to other devices."));
+              _("While enabled, files from the selected media libraries are shared to compatible DLNA-enabled devices on your local network such as certain TVs and game consoles."),
+              _("While disabled, the selected media libraries are unshared, and files will not be streamed from your computer to other DLNA-enabled devices on your local network."));
 
         switch_state_changed.connect ((state) => {
             /* Make sure the configuration file exists */
